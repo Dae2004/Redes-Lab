@@ -1,0 +1,32 @@
+
+
+User Access Verification
+
+Username: ********
+Password: 
+Cisco3725#
+Cisco3725#terminal width 511
+Cisco3725#terminal length 0
+Cisco3725#
+Cisco3725#
+Cisco3725#show running-config | include hostname
+hostname Cisco3725
+Cisco3725#
+Cisco3725#show version | include uptime
+Cisco3725 uptime is 9 minutes
+Cisco3725#
+Cisco3725#show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.30.203  YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+FastEthernet1/0            192.168.31.1    YES NVRAM  up                    up      
+Cisco3725#
+Cisco3725#show ip route 0.0.0.0
+Routing entry for 0.0.0.0/0, supernet
+  Known via "static", distance 1, metric 0, candidate default path
+  Routing Descriptor Blocks:
+  * 192.168.30.1
+      Route metric is 0, traffic share count is 1
+
+Cisco3725#
+Cisco3725#exit
