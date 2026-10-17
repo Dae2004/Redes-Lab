@@ -4112,6 +4112,7 @@ Press F1 for help
 [9999B
 [9999B
 
+2026-10-17 05:43:22 system,error,critical login failure for user ******** from 192.168.122.1 via ssh
 
 
 
@@ -4145,7 +4146,7 @@ Press F1 for help
 
 
 
-[********@MikroTik] > :put [:len [/interface bridge find name="lo-ssh-99"]]
+[********@MikroTik] > :put [:len [/interface bridge find name="lo-ssh-16"]]
 
 1
 
@@ -4166,14 +4167,9 @@ Press F1 for help
 
 
 
-[********@MikroTik] > :put [/interface bridge get [find name="lo-ssh-99"] comment]
+[********@MikroTik] > :put [/interface bridge get [find name="lo-ssh-16"] comment]
 
-Su Nombre
-
-
-
-[********@MikroTik] > 
-
+Alex Ledezma
 
 
 
@@ -4187,7 +4183,12 @@ Su Nombre
 
 
 
-[********@MikroTik] > :put [:len [/ip address find address="10.253.0.99/32" and interface!="lo-ssh-99"]]
+[********@MikroTik] > 
+
+
+
+
+[********@MikroTik] > :put [:len [/ip address find address="10.253.0.16/32" and interface!="lo-ssh-16"]]
 
 0
 
@@ -4208,7 +4209,7 @@ Su Nombre
 
 
 
-[********@MikroTik] > :put [:len [/ip address find address="10.253.0.99/32" and interface="lo-ssh-99"]]
+[********@MikroTik] > :put [:len [/ip address find address="10.253.0.16/32" and interface="lo-ssh-16"]]
 
 1
 
@@ -4229,14 +4230,9 @@ Su Nombre
 
 
 
-[********@MikroTik] > /ip address print terse where interface="lo-ssh-99"
+[********@MikroTik] > /ip address print terse where interface="lo-ssh-16"
 
-0 comment=Su Nombre address=10.253.0.99/32 network=10.253.0.99 interface=lo-ssh-99 actual-interface=lo-ssh-99 vrf=main
-
-
-
-
-[********@MikroTik] > 
+0 comment=Alex Ledezma address=10.253.0.16/32 network=10.253.0.16 interface=lo-ssh-16 actual-interface=lo-ssh-16 vrf=main
 
 
 
@@ -4251,7 +4247,12 @@ Su Nombre
 
 
 
-[********@MikroTik] > :put [:len [/interface bridge find name="lo-ssh-99"]]
+[********@MikroTik] > 
+
+
+
+
+[********@MikroTik] > :put [:len [/interface bridge find name="lo-ssh-16"]]
 
 1
 
@@ -4302,20 +4303,20 @@ Su Nombre
 
 [********@MikroTik] > /system resource print
 
-                   uptime: 9m50s                                     
+                   uptime: 7m29s                                     
                   version: 7.23.7 (long-term)                        
                build-time: 2026-09-16 12:19:15                       
          factory-software: 7.1                                       
-              free-memory: 50.0MiB                                   
+              free-memory: 49.8MiB                                   
              total-memory: 256.0MiB                                  
                       cpu: QEMU                                      
                 cpu-count: 1                                         
             cpu-frequency: 1896MHz                                   
-                 cpu-load: 20%                                       
+                 cpu-load: 5%                                        
            free-hdd-space: 69.2MiB                                   
           total-hdd-space: 89.2MiB                                   
-  write-sect-since-reboot: 1160                                      
-         write-sect-total: 1160                                      
+  write-sect-since-reboot: 984                                       
+         write-sect-total: 984                                       
         architecture-name: x86_64                                    
                board-name: CHR QEMU Standard PC (i440FX + PIIX, 1996)
                  platform: MikroTik                                  
@@ -4339,9 +4340,9 @@ Su Nombre
 
 [********@MikroTik] > /ip address print terse
 
-0 address=192.168.30.202/24 network=192.168.30.0 interface=ether1 actual-interface=ether1 vrf=main
+0 address=192.168.122.202/24 network=192.168.122.0 interface=ether1 actual-interface=ether1 vrf=main
 1 address=192.168.32.1/24 network=192.168.32.0 interface=ether2 actual-interface=ether2 vrf=main
-2 comment=Su Nombre address=10.253.0.99/32 network=10.253.0.99 interface=lo-ssh-99 actual-interface=lo-ssh-99 vrf=main
+2 comment=Alex Ledezma address=10.253.0.16/32 network=10.253.0.16 interface=lo-ssh-16 actual-interface=lo-ssh-16 vrf=main
 
 
 
@@ -4363,7 +4364,7 @@ Su Nombre
 
 [********@MikroTik] > /ip route print terse where dst-address=0.0.0.0/0
 
-0 As dst-address=0.0.0.0/0 routing-table=main gateway=192.168.30.1 immediate-gw=192.168.30.1%ether1 distance=1 scope=30 target-scope=10
+0 As dst-address=0.0.0.0/0 routing-table=main gateway=192.168.122.1 immediate-gw=192.168.122.1%ether1 distance=1 scope=30 target-scope=10
 
 
 

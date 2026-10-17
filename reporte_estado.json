@@ -1,10 +1,10 @@
 [
   {
     "nombre": "mt-lab",
-    "host": "192.168.30.202",
+    "host": "192.168.122.202",
     "device_type": "mikrotik_routeros",
     "rol": "escritura",
-    "fecha_hora": "2026-10-06T20:20:24",
+    "fecha_hora": "2026-10-16T23:43:28",
     "estado": "ok",
     "configuracion": {
       "accion": "asegurar",
@@ -12,49 +12,49 @@
       "verificacion": {
         "bridge_existe": true,
         "ips": [
-          "10.253.0.99/32"
+          "10.253.0.16/32"
         ],
         "ok": true
       }
     },
     "datos": {
       "nombre": "MikroTik",
-      "uptime": "9m50s",
+      "uptime": "7m29s",
       "interfaces": [
         {
           "interfaz": "ether1",
-          "ip": "192.168.30.202/24"
+          "ip": "192.168.122.202/24"
         },
         {
           "interfaz": "ether2",
           "ip": "192.168.32.1/24"
         },
         {
-          "interfaz": "lo-ssh-99",
-          "ip": "10.253.0.99/32"
+          "interfaz": "lo-ssh-16",
+          "ip": "10.253.0.16/32"
         }
       ],
-      "ruta_defecto": "192.168.30.1"
+      "ruta_defecto": "192.168.122.1"
     },
     "rest": {
       "datos": {
         "nombre": "MikroTik",
-        "uptime": "9m51s",
+        "uptime": "7m30s",
         "interfaces": [
           {
             "interfaz": "ether1",
-            "ip": "192.168.30.202/24"
+            "ip": "192.168.122.202/24"
           },
           {
             "interfaz": "ether2",
             "ip": "192.168.32.1/24"
           },
           {
-            "interfaz": "lo-ssh-99",
-            "ip": "10.253.0.99/32"
+            "interfaz": "lo-ssh-16",
+            "ip": "10.253.0.16/32"
           }
         ],
-        "ruta_defecto": "192.168.30.1"
+        "ruta_defecto": "192.168.122.1"
       },
       "coincide": {
         "nombre": true,
@@ -65,18 +65,18 @@
   },
   {
     "nombre": "cisco-lab",
-    "host": "192.168.30.203",
+    "host": "192.168.122.203",
     "device_type": "cisco_ios_telnet",
     "rol": "lectura",
-    "fecha_hora": "2026-10-06T20:20:26",
+    "fecha_hora": "2026-10-16T23:43:29",
     "estado": "ok",
     "datos": {
       "nombre": "Cisco3725",
-      "uptime": "9 minutes",
+      "uptime": "7 minutes",
       "interfaces": [
         {
           "interfaz": "FastEthernet0/0",
-          "ip": "192.168.30.203",
+          "ip": "192.168.122.203",
           "estado": "up",
           "protocolo": "up"
         },
@@ -93,7 +93,7 @@
           "protocolo": "up"
         }
       ],
-      "ruta_defecto": "192.168.30.1"
+      "ruta_defecto": "192.168.122.1"
     }
   }
 ]
