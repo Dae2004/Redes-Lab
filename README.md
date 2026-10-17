@@ -36,8 +36,4 @@ solo ofrece `diffie-hellman-group1-sha1`, eliminado en Paramiko 5).
 
 ## Declaración de uso de IA
 
-Usé Claude Code (Anthropic) como asistente durante el laboratorio: para revisar
-mi lista de pendientes, reconfigurar la topología de GNS3 (cambiar el acceso del
-host de `tap0` a `virbr0` y readdressar los equipos) y redactar partes de este
-README. El código del script y las decisiones de diseño las revisé y puedo
-explicarlas en la defensa.
+Usé Claude Code para reconfigurar la red de GNS3 (de `tap0` a `virbr0`), ejecutar las corridas finales y redactar partes de este README; el código lo revisé y puedo explicarlo.
