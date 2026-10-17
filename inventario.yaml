@@ -1,17 +1,17 @@
 estudiante:
-  numero: 99          
-  nombre: "Dae"   
+  numero: 16
+  nombre: "Alex Ledezma"   
 
 equipos:
   - nombre: mt-lab
-    host: 192.168.30.202   # local GNS3 (clase: 10.60.30.202)
+    host: 192.168.122.202   # local GNS3 (clase: 10.60.30.202)
     device_type: mikrotik_routeros
     usuario: lab-ssh
     rol: escritura
 
 
   - nombre: cisco-lab
-    host: 192.168.30.203   # local GNS3 (clase: 10.60.30.203)
+    host: 192.168.122.203   # local GNS3 (clase: 10.60.30.203)
     device_type: cisco_ios_telnet
     usuario: lab-ssh
     rol: lectura
